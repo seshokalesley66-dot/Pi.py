@@ -1,0 +1,7 @@
+user_input = input("You: ")
+if "hello" in user_input.lower():
+    print("Bot: Hi there!")
+elif "bye" in user_input.lower():
+    print("Bot: Goodbye!")
+else:
+    print("Bot: I don't understand.")
