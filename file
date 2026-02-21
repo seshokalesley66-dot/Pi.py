@@ -1,0 +1,14 @@
+from sklearn.linear_model import LogisticRegression
+
+# Sample data: Ages
+X = [[15], [17], [18], [20], [25], [30]]
+# Labels: 0 = Minor, 1 = Adult
+y = [0, 0, 1, 1, 1, 1]
+
+# Train model
+model = LogisticRegression()
+model.fit(X, y)
+
+# Predict
+print(model.predict([[22]])) # Output: [1] (Adult)
+# [1, 7]
